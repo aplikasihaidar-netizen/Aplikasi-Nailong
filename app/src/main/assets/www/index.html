@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nailong — Game & Kuis Offline</title>
+<meta name="theme-color" content="#ffc928"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Nailong">
+<meta name="description" content="Game, kuis, petualangan, dan kartu semangat Nailong yang bisa dimainkan offline."><link rel="apple-touch-icon" href="assets/icon-192.png"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/img/img00-4a5c7070.jpg">
+
+<link rel="stylesheet" href="css/app.css"></head><body>
+<div id="fx"></div>
+<div id="s1" class="scr hide">
+<img class="mascot" id="m1" alt="Nailong">
+<h1>Hadiah dari Nailong</h1>
+<div>Isi dulu, ya. Nailong sudah siap menyapa!</div>
+<input id="to" placeholder="Isi namamu" maxlength="24">
+<div style="font-weight:800">Bagaimana kabarnya hari ini, Qrikil?</div>
+<div id="ek"></div>
+<input id="kb" type="hidden">
+<input id="from" hidden>
+<textarea id="note" hidden></textarea>
+<button id="go">Mari bersenang-senang</button>
+</div>
+<div id="play" class="scr hide">
+<div id="hud"><span id="sc">0 ⭐</span><span id="tm">30</span></div>
+</div>
+<div id="legacy" hidden>
+<img class="mascot" id="m5" alt="Nailong">
+<h1 style="font-size:clamp(28px,7vw,42px)">Pilih game</h1>
+<button class="opt" id="g6">🗺️ Petualangan 20 Level</button>
+<button class="opt" id="g1">🐥 Tangkap Nailong</button>
+<button class="opt" id="g2">🃏 Pasang Kartu</button>
+<button class="opt" id="g3">🤣 Gelitik Nailong</button>
+<button class="opt" id="g4">❓ Kuis Kocak Acak (100)</button>
+<button class="opt" id="g5">☀️ Sarapan Pagi</button>
+<button class="opt" id="g7">🌸 Kuis Manja Hari Haid</button>
+<button class="opt" id="g8">📚 Kuis Capek Tugas</button>
+<button class="opt" id="g9">🕌 Kuis Santri Capek</button>
+<button class="opt" id="g10">🧹 Kuis Teman Kamar Mager</button>
+</div>
+<div id="s5" class="scr hide">
+<img class="mascot pz" id="m9" alt="Nailong">
+<h1 id="hi" style="font-size:clamp(28px,8vw,42px)"></h1>
+<div id="hi2">Mau ngapain hari ini?</div>
+<button class="card" onclick="cat('game')"><span>🎮</span><div><b>Game</b><small>Pilih yang kamu suka</small></div></button>
+<button class="card" onclick="cat('kuis')"><span>❓</span><div><b>Kuis</b><small>Pertanyaan kocak, selalu baru</small></div></button>
+
+<button class="card" onclick="cat('duel')"><span>👥</span><div><b>Duel 2 Pemain</b><small>Adu seru berdua</small></div></button>
+<button class="card" onclick="cat('semangat')"><span>💌</span><div><b>Semangat</b><small>Kartu penyemangat untukmu</small></div></button>
+</div>
+<div id="s7" class="scr hide"><img class="mascot pz" id="m7" alt="Nailong"><h1 id="h7" style="font-size:clamp(26px,7vw,38px)"></h1><div id="l7"></div></div>
+<div id="s8" class="scr hide"><img id="iv" alt=""><h1 id="it"></h1><div id="is" style="font-size:19px;font-weight:800"></div><div id="pr"></div><button id="skip">Lewati</button></div>
+<button id="bk" class="hide">‹ Menu</button>
+<div id="s6" class="scr hide"><div id="gt" style="font-weight:800;font-size:20px"></div><div id="gb"></div></div>
+<div id="s4" class="scr hide">
+<img class="mascot" id="m4" alt="Nailong">
+<div id="qi"></div>
+<h1 id="qq" style="font-size:clamp(24px,6vw,36px)"></h1>
+<div id="qo"></div>
+<div id="qf" style="font-weight:800;min-height:28px"></div>
+</div>
+<div id="s3" class="scr hide">
+<img class="mascot" id="m3" alt="Nailong">
+<h1 id="big" style="overflow-wrap:anywhere"></h1>
+<div id="res"></div>
+<div class="msg" id="out"></div>
+<button id="again">Kembali ke menu</button>
+</div>
+<div id="upd" hidden role="status" style="position:fixed;left:12px;right:12px;top:calc(env(safe-area-inset-top,0px)+8px);z-index:200;background:var(--card);border:2px solid var(--acc);border-radius:16px;padding:8px 14px;gap:10px;align-items:center;justify-content:space-between;font-weight:800"><span>Versi baru siap 🎉</span><button id="updb" style="font-size:14px;padding:6px 14px">Muat ulang</button></div>
+<script src="js/legacy-games.js"></script>
+</body></html>

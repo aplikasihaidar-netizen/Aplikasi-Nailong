@@ -1,0 +1,32 @@
+{
+  "name": "Nailong — Game & Kuis Offline",
+  "short_name": "Nailong",
+  "description": "Game, kuis, petualangan, dan kartu semangat Nailong yang bisa dimainkan offline.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff6cf",
+  "theme_color": "#ffc928",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
